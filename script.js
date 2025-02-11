@@ -44,6 +44,4 @@ function showEmojiPopUp(emoji) {
 
     // Remove the emoji after the animation ends (1 second)
     setTimeout(() => {
-        emojiDiv.remove();
-    }, 1000);
-}
+        emojiDiv.remo

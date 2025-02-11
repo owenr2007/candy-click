@@ -4,6 +4,7 @@ let cursorCost = 10;
 
 // Update the displayed candy count and cursor count
 function updateDisplay() {
+    // Fixing ID to match the HTML
     document.getElementById("cookie-count").textContent = candies + " 🍬";
     document.getElementById("cursor-count").textContent = cursors;
 }

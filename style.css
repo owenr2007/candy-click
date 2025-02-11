@@ -35,6 +35,26 @@ button:hover {
     margin-top: 20px;
 }
 
+#game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-left {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#candy-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ff007f; /* Candy color */
+    margin-right: 10px;
+}
+
 #cookie-button {
     background-color: #ff007f;
     font-size: 24px;
@@ -47,5 +67,35 @@ button:hover {
 h2, h3 {
     font-size: 1.2em;
     color: #7a1a1a; /* Red color for candy theme */
+}
+
+#emoji-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    z-index: 10;
+}
+
+/* Emoji pop-up animation */
+.emoji {
+    position: absolute;
+    font-size: 40px;
+    animation: pop-up 1s forwards;
+}
+
+@keyframes pop-up {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-30px);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
 }
 

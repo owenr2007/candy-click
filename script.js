@@ -21,6 +21,9 @@ document.getElementById("buy-cursor").addEventListener("click", function () {
         cursors++; // Increase the number of cursors
         cursorCost = Math.floor(cursorCost * 1.2); // Increase the cursor cost
         updateDisplay(); // Update the display after purchasing a cursor
+
+        // Show pop-up emoji when buying a cursor
+        showEmojiPopUp("🍬");
     }
 });
 
@@ -29,3 +32,18 @@ setInterval(function () {
     candies += cursors; // Add candies per second based on cursors
     updateDisplay(); // Update the display every second
 }, 1000);
+
+// Function to show emoji pop-up
+function showEmojiPopUp(emoji) {
+    const emojiDiv = document.createElement("div");
+    emojiDiv.classList.add("emoji");
+    emojiDiv.textContent = emoji;
+
+    // Append the emoji to the emoji container
+    document.getElementById("emoji-container").appendChild(emojiDiv);
+
+    // Remove the emoji after the animation ends (1 second)
+    setTimeout(() => {
+        emojiDiv.remove();
+    }, 1000);
+}

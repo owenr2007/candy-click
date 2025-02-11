@@ -15,6 +15,9 @@ function updateDisplay() {
 document.getElementById("cookie-button").addEventListener("click", function () {
     candies++; // Increment candies by 1 on click
     updateDisplay(); // Update the display with the new candy count
+
+    // Show pop-up emoji when clicking
+    showEmojiPopUp("🍬");
 });
 
 // Buy a cursor (auto-clicker)
@@ -69,3 +72,4 @@ function showEmojiPopUp(emoji) {
         emojiDiv.remove();
     }, 1000);
 }
+

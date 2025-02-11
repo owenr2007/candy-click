@@ -1,15 +1,50 @@
 body {
     text-align: center;
-    font-family: Arial, sans-serif;
-    background-color: #f8e9a1;
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #ffebcd; /* Light candy color */
+    color: #7a1a1a; /* Deep red color for text */
+}
+
+h1 {
+    color: #ff007f; /* Bright candy pink */
+    font-size: 3em;
+    margin-top: 20px;
 }
 
 button {
-    padding: 10px;
+    padding: 12px 20px;
     font-size: 18px;
     margin: 10px;
     cursor: pointer;
-    border-radius: 8px;
-    background-color: #ffcc00;
-    border: none;
+    border-radius: 12px;
+    background-color: #ffcc00; /* Candy yellow */
+    border: 2px solid #ff7700;
+    color: white;
+}
+
+button:hover {
+    background-color: #ff7700; /* Candy orange when hovering */
+}
+
+#cookie-counter {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+#shop {
+    margin-top: 20px;
+}
+
+#cookie-button {
+    background-color: #ff007f;
+    font-size: 24px;
+}
+
+#cookie-button:hover {
+    background-color: #ff4da6; /* Lighter pink on hover */
+}
+
+h2, h3 {
+    font-size: 1.2em;
+    color: #7a1a1a; /* Red color for candy theme */
 }
